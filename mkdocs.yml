@@ -1,0 +1,52 @@
+# Project information
+site_name: Xcompact3d
+site_description: 'Xcompact3d user Guide'
+
+# Repository
+repo_name: 'xcompact3d/Incompact3d'
+repo_url: 'https://github.com/xcompact3d/Incompact3d'
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Xcompact3d'
+
+# Configuration
+# nav:
+#     - Home: index.md
+#     - About: about.md
+#     - Getting Started: getting-started.md
+#     - FAQ: FAQ.md
+#     - Flow Configurations:
+#       - Channel Flow: ./flow-configuration/channel-flow.md
+#       - Flow around Cylinder: ./flow-configuration/cylinder.md
+#       - Lock-exchange: ./flow-configuration/lock-exchange.md
+#       - Mixing Layer: ./flow-configuration/mixing-layer.md
+#       - Taylor Green Vortex: ./flow-configuration/taylor-green-vortex.md
+#       - Turbulent Boundary Layer: ./flow-configuration/turbulent-boundary-layer.md
+#       - User Configuration: ./flow-configuration/user.md
+theme:
+  name: 'material'
+  language: 'en'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/xcompact3d/Incompact3d'
+    - type: 'twitter'
+      link: 'https://twitter.com/incompact3d'
+    - type: 'home'
+      link: 'https://www.incompact3d.com/'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - footnotes
+  - codehilite:
+      linenums: true
+
+# For LaTeX equations
+extra_javascript:
+  - 'javascripts/extra.js'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
