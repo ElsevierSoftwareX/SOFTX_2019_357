@@ -1,0 +1,607 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Xcompact3d user Guide">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Getting started - Xcompact3d</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#installation" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Xcompact3d" aria-label="Xcompact3d" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Xcompact3d
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Getting started
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/xcompact3d/Incompact3d/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    xcompact3d/Incompact3d
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Xcompact3d" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Xcompact3d
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/xcompact3d/Incompact3d/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    xcompact3d/Incompact3d
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting started
+      </label>
+    
+    <a href="./" title="Getting started" class="md-nav__link md-nav__link--active">
+      Getting started
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fortran-compiler" class="md-nav__link">
+    Fortran Compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-the-code" class="md-nav__link">
+    Downloading the code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-an-existing-source-tree" class="md-nav__link">
+    Updating an existing source tree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known issues
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiling-incompact3d" class="md-nav__link">
+    Compiling Incompact3d
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-files" class="md-nav__link">
+    Input Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-code" class="md-nav__link">
+    Running the code
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fortran-compiler" class="md-nav__link">
+    Fortran Compiler
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-the-code" class="md-nav__link">
+    Downloading the code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-an-existing-source-tree" class="md-nav__link">
+    Updating an existing source tree
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known issues
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compiling-incompact3d" class="md-nav__link">
+    Compiling Incompact3d
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-files" class="md-nav__link">
+    Input Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-the-code" class="md-nav__link">
+    Running the code
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/xcompact3d/Incompact3d/edit/master/docs/getting-started.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Getting started</h1>
+                
+                <h2 id="installation">Installation</h2>
+<h3 id="fortran-compiler">Fortran Compiler</h3>
+<p>When starting to use <strong>Xcompact3d</strong> on your local workstation, it is recommended to install <strong>gfortran</strong> and <strong>openmpi</strong> (preferably with an <strong>Ubuntu</strong> distribution). It is possible to download the latest archive for <strong>openmpi</strong> from the address <a href="https://www.open-mpi.org/software/ompi/v3.1/">www.open-mpi.org/software/ompi/v3.1/</a>. See below for the installation of <strong>gfortran</strong> and <strong>openmpi</strong>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo apt-get install build-essential
+sudo apt-get install gfortran
+tar -xvzf openmpi-***.tar.gz
+<span class="nb">cd</span> openmpi***
+sudo ./configure  --prefix<span class="o">=</span>/usr/local <span class="nv">F77</span><span class="o">=</span>gfortran <span class="nv">FC</span><span class="o">=</span>gfortran
+sudo make all install
+</code></pre></div>
+</td></tr></table>
+
+<p>It is also necessary to add a line in the <code>.bashrc</code> file:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/lib/
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="downloading-the-code">Downloading the code</h3>
+<p>Download the last release directly from the <a href="https://github.com/xcompact3d/Incompact3d/releases">repository</a> or acquire the source code by cloning the git repository:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git clone git@github.com:xcompact3d/Incompact3d.git
+</code></pre></div>
+</td></tr></table>
+
+<details class="note" open="open"><summary>If you are behind a firewall</summary><p>You may need to use the <code>https</code> protocol instead of the <code>git</code> protocol:</p>
+<p><code>Bash
+git config --global url."https://".insteadOf git@</code></p>
+<p>Be sure to also configure your system to use the appropriate proxy settings, e.g. by setting the <code>https_proxy</code> and <code>http_proxy</code> variables.</p>
+</details>
+<p>By default you will be building the latest master version of Xcompact3d, to use the release preview you must checkout the release branch</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git checkout release
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="updating-an-existing-source-tree">Updating an existing source tree</h3>
+<p>If you have previously downloaded <code>incompact3d</code> using <code>git clone</code>, you can update the existing source tree using <code>git pull</code> rather than starting anew:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">cd</span> incompact3d
+git pull <span class="o">&amp;&amp;</span> make
+</code></pre></div>
+</td></tr></table>
+
+<p>Assuming that you had made no changes to the source tree that will conflict with upstream updates, these commands will trigger a build to update to the latest version.</p>
+<h3 id="known-issues">Known issues</h3>
+<p>Some users have experienced difficulties with the MPI librairy <code>mpich</code>.  Other than that <strong>Xcompact3d</strong> has been used on a wide range of supercomputers with various compilers and MPI librairies.</p>
+<p>It is strongly recommended to carefully read the documentation of the supercomputer you will be using. You should be able to find all the information you need about the optimum compiler options.</p>
+<h2 id="compiling-incompact3d">Compiling Incompact3d</h2>
+<p>Now run <code>make</code> to build the <code>Xcompact3d</code> executable.
+This takes a while, but only has to be done once. If the defaults in the build do not work for you, and you need to set specific make parameters, you can save them in <code>Make.user</code>. The build will automatically check for the existence of <code>Makefile</code> and use it if it exists. Building Xcompact3d requires very little of disk space and virtual memory.</p>
+<p>The command <code>make post</code> compiles the new post-processing utility. To remove all binary files type <code>make clean</code>, it is also recommended when any compilation flag or variables defined in Fortran as parameters are changed. <code>make cleanall</code> is more aggressive, it removes all binaries besides all files produced during simulation.</p>
+<h2 id="input-files">Input Files</h2>
+<p>The name of each variable is clearly explained in the <code>input.i3d</code> file. All quantities are non-dimentionalised with a length and a velocity.</p>
+<p>The domain size is <span><span class="MathJax_Preview"> xlx \times yly \times zlz </span><script type="math/tex"> xlx \times yly \times zlz </script></span> and it is discritised in <span><span class="MathJax_Preview"> nx \times ny \times nz </span><script type="math/tex"> nx \times ny \times nz </script></span> mesh points. Notice that the number of mesh points in a direction <span><span class="MathJax_Preview"> i </span><script type="math/tex"> i </script></span> should respect the following equation:</p>
+<div>
+<div class="MathJax_Preview">
+n_i = \left\{ \begin{array}{ll} 2^{1+a} \times 3^b \times 5^c &amp;\mbox{if periodic,} \\ 2^{1+a} \times 3^b \times 5^c + 1 &amp;\mbox{otherwise,}
+\end{array} \right.
+</div>
+<script type="math/tex; mode=display">
+n_i = \left\{ \begin{array}{ll} 2^{1+a} \times 3^b \times 5^c &\mbox{if periodic,} \\ 2^{1+a} \times 3^b \times 5^c + 1 &\mbox{otherwise,}
+\end{array} \right.
+</script>
+</div>
+<p>where <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span>, <span><span class="MathJax_Preview">b</span><script type="math/tex">b</script></span> and <span><span class="MathJax_Preview">c</span><script type="math/tex">c</script></span> are integers.</p>
+<details class="example" open="open"><summary>Examples for non-periodic case</summary><p>7 9 11 13 17 19 21 25 31 33 37 41 49 51 55 61 65 73 81 91 97 101 109 121 129 145 151 161 163 181 193 201 217 241 251 257 271 289 301 321 325 361 385 401 433 451 481 487 501 513 541 577 601 641 649 721 751 769 801 811 865 901 961 973 1001 1025 1081 1153 1201 1251 1281 1297 1351 1441 1459 1501 1537 1601 1621 1729 1801 1921 1945 2001 2049 2161 2251 2305 2401 2431 2501 2561 2593 2701 2881 2917 3001 3073 3201 3241 3457 3601 3751 3841 3889 4001 4051 4097 4321 4375 4501 4609 4801 4861 5001 5121 5185 5401 5761 5833 6001 6145 6251 6401 6481 6751 6913 7201 7291 7501 7681 7777 8001 8101 8193 8641 8749 9001 9217 9601...</p>
+<p>For periodic cases, just subtract one.</p>
+</details>
+<p>There is no check on the time step <code>dt</code>, so it is your responsability to carefully investigate about the stability conditions for your simulation. The optimum time step has to be defined with a trial-and-error procedure.</p>
+<p>The time step is fixed for a given simulation. It is not possible (yet?) to use a different time step at each time step.</p>
+<p>The parameters <code>p_row</code> and <code>p_col</code> are associate with the 2D Pencil Decomposition (see <a href="http://www.2decomp.org/">2DECOMP&amp;FFT</a>) for large-scale parallel applications. Notice that the product of both should be equal to the number of computational cores where Xcompact3d will run.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Setting <code>p_row = p_col = 0</code> activates the auto-tuning mode, where the code chooses the fastest combination.</p>
+</div>
+<p>More details are available in six exemplified flow configuration:</p>
+<ul>
+<li><a href="./Flow-Configurations/channel-flow.md">Periodic Channel Flow</a></li>
+<li><a href="./Flow-Configurations/cylinder.md">Flow Over a Cylinder</a></li>
+<li><a href="./Flow-Configurations/lock-exchange.md">Gravity Current (Lock-Exchange)</a></li>
+<li><a href="./Flow-Configurations/mixing-layer.md">Mixing Layer</a></li>
+<li><a href="./Flow-Configurations/taylor-green-vortex.md">Taylor-Green Vortices</a></li>
+<li><a href="./Flow-Configurations/turbulent-boundary-layer.md">Turbulent Boundary Layer</a></li>
+</ul>
+<h2 id="running-the-code">Running the code</h2>
+<p>Now you should be able to run Xcompacted3d like this:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mpirun -n &lt;number of cores&gt; ./xcompact3d ./examples/&lt;EXAMPLE&gt;/input.i3d
+</code></pre></div>
+</td></tr></table>
+
+<p>If a <code>input.i3d</code> file is not provided, Xcompact3d will look for it locally (i.e. try to load ./input.i3d)</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It is a good practice to save the execution log into a file, in Linux, for instance, it can be done using the command:</p>
+<p><code>mpirun -n &lt;number of cores&gt; ./xcompact3d ./examples/&lt;EXAMPLE&gt;/input.i3d &gt; log.out</code></p>
+</div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 Xcompact3d
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/xcompact3d/Incompact3d" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/incompact3d" target="_blank" rel="noopener" title="twitter" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.incompact3d.com/" target="_blank" rel="noopener" title="home" class="md-footer-social__link fa fa-home"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:".."}})</script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
