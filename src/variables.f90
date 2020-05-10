@@ -89,12 +89,17 @@ module var
   real(mytype), save, allocatable, dimension(:,:,:) :: sgsx1,sgsy1,sgsz1,nut1,sxx1,syy1,szz1,sxy1,sxz1,syz1
   real(mytype), save, allocatable, dimension(:,:,:) :: sgsx2,sgsy2,sgsz2,nut2,sxx2,syy2,szz2,sxy2,sxz2,syz2
   real(mytype), save, allocatable, dimension(:,:,:) :: sgsx3,sgsy3,sgsz3,nut3,sxx3,syy3,szz3,sxy3,sxz3,syz3
+
+  real(mytype), save, allocatable, dimension(:,:,:) :: sdxx1,sdyy1,sdzz1,sdxy1,sdxz1,sdyz1
+  real(mytype), save, allocatable, dimension(:,:,:) :: sdxx2,sdyy2,sdzz2,sdxy2,sdxz2,sdyz2
+  real(mytype), save, allocatable, dimension(:,:,:) :: sdxx3,sdyy3,sdzz3,sdxy3,sdxz3,sdyz3
+
   real(mytype), save, allocatable, dimension(:,:,:) :: gxx1,gyx1,gzx1,gxy1,gyy1,gzy1,gxz1,gyz1,gzz1
   real(mytype), save, allocatable, dimension(:,:,:) :: gxy2,gyy2,gzy2,gxz2,gyz2,gzz2
   real(mytype), save, allocatable, dimension(:,:,:) :: gxz3,gyz3,gzz3
   real(mytype), save, allocatable, dimension(:,:,:,:) :: sgsphi1,sgsphi2,sgsphi3
 
-  real(mytype), save, allocatable, dimension(:,:,:) :: srt_smag, srt_smag2, srt_wale, srt_wale2
+  real(mytype), save, allocatable, dimension(:,:,:) :: srt_smag, srt_smag2
   real(mytype), save, allocatable, dimension(:,:,:) :: srt_wale, srt_wale2, srt_wale3, srt_wale4
 
 contains
@@ -273,6 +278,8 @@ contains
        call alloc_x(sgsx1);call alloc_x(sgsy1); call alloc_x(sgsz1)
        call alloc_x(sxx1);call alloc_x(syy1); call alloc_x(szz1)
        call alloc_x(sxy1);call alloc_x(sxz1); call alloc_x(syz1)
+       call alloc_x(sdxx1);call alloc_x(sdyy1); call alloc_x(sdzz1)
+       call alloc_x(sdxy1);call alloc_x(sdxz1); call alloc_x(sdyz1)
        call alloc_x(nut1);call alloc_x(srt_smag); call alloc_x(srt_wale)
        call alloc_y(sgsx2);call alloc_y(sgsy2); call alloc_y(sgsz2)
        call alloc_y(sxx2); call alloc_y(syy2);  call alloc_y(szz2)
